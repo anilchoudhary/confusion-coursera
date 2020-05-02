@@ -2,7 +2,8 @@
   fxLayoutAlign.gt-md="space-around center" fxLayoutGap="10px" fxLayoutGap.xs="0">
 
   <div fxFlex="100">
-    <div fxFlex *ngIf="dish">
+    <div fxFlex>
+      <h3 *ngIf="dish">{{dish.name | uppercase}}</h3>
       <mat-card>
         <mat-card-header>
           <mat-card-title>
